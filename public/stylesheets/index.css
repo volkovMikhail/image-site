@@ -1,0 +1,22 @@
+main {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.sidebar {
+  flex: 1;
+  max-width: 200px;
+}
+
+.images {
+  flex: 1;
+}
+
+main::after {
+  flex: 1;
+  content: '';
+  max-width: 200px;
+}

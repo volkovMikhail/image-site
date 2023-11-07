@@ -1,7 +1,19 @@
-<h1>{{message}}</h1>
-
-{{#each arr}}
-   <h2>{{.}}</h2>
-{{/each}}
-
-{{>part}}
+<main>
+   <div class="sidebar">
+      <ul>
+         <li>
+            <a href="/">1</a>
+         </li>
+         <li>
+            <a href="/">2</a>
+         </li>
+      </ul>
+   </div>
+   <div class="images">
+      <h1>{{message}}</h1>
+      {{#each arr}}
+         <h2>{{.}}</h2>
+      {{/each}}
+      <h3>{{partial}}</h3>
+   </div>
+</main>
