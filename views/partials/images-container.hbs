@@ -1,0 +1,85 @@
+<div class="images-container">
+  <div className=".images-container__image">
+    <div class="images-container__item__image" style="background-image: url('/static/1.jpg');"></div>
+  </div>
+  <div className=".images-container__image">
+    <div class="images-container__item__image" style="background-image: url('/static/2.jpg');"></div>
+  </div>
+  <div className=".images-container__image">
+    <div class="images-container__item__image" style="background-image: url('/static/1.jpg');"></div>
+  </div>
+  <div className=".images-container__image">
+    <div class="images-container__item__image" style="background-image: url('/static/2.jpg');"></div>
+  </div>
+  <div className=".images-container__image">
+    <div class="images-container__item__image" style="background-image: url('/static/1.jpg');"></div>
+  </div>
+  <div className=".images-container__image">
+    <div class="images-container__item__image" style="background-image: url('/static/2.jpg');"></div>
+  </div>
+  <div className=".images-container__image">
+    <div class="images-container__item__image" style="background-image: url('/static/1.jpg');"></div>
+  </div>
+  <div className=".images-container__image">
+    <div class="images-container__item__image" style="background-image: url('/static/2.jpg');"></div>
+  </div>
+</div>
+<style>
+  .images-container__item {
+    width: 100%;
+    padding-bottom: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  .images-container__item__image {
+    width: 100%;
+    padding-bottom: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  .images-container {
+    display: grid;
+    grid-gap: 1rem;
+    justify-content: center;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 80em) {
+    .images-container {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  @media screen and (max-width: 80em) {
+    .images-container {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  @media screen and (max-width: 60em) {
+    .images-container {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media screen and (max-width: 55em) {}
+
+  @media screen and (max-width: 40em) {
+    .images-container {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      justify-items: auto;
+    }
+  }
+
+  @media screen and (max-width: 25em) {
+    .images-container {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+</style>

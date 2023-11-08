@@ -3,7 +3,7 @@ main {
   margin-left: auto;
   display: flex;
   justify-content: center;
-  max-width: 1200px;
+  width: 100%;
 }
 
 .sidebar {
@@ -11,7 +11,7 @@ main {
   max-width: 200px;
 }
 
-.images {
+.main-container {
   flex: 1;
 }
 
@@ -19,4 +19,25 @@ main::after {
   flex: 1;
   content: '';
   max-width: 200px;
+}
+
+@media screen and (min-width: 80em) {
+}
+
+@media screen and (max-width: 80em) {
+  main::after {
+    flex: 0;
+  }
+}
+
+@media screen and (max-width: 60em) {
+}
+
+@media screen and (max-width: 55em) {
+}
+
+@media screen and (max-width: 40em) {
+}
+
+@media screen and (max-width: 25em) {
 }
